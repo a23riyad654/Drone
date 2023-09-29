@@ -1,0 +1,416 @@
+/* ========== CSS Variables ========== */
+:root {
+  --F_Font: 'Mooli', sans-serif;
+  --S_Font: "Baloo 2";
+  --th_Font: "Poppins";
+  --Four_Font: 'Concert One', cursive;
+  --F_Color: #001C30;
+  --S_Color: #DAFFFB;
+  --TH_Color: #64CCC5;
+  --Four_Color: #176B87;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+/* ===== Constant ======= */
+
+li {
+  list-style: none;
+}
+
+a {
+  text-decoration: none !important;
+}
+
+button {
+  border: none;
+  outline: none;
+}
+.box_Shadow{
+  box-shadow: 0px 10px 15px 1px rgb(104, 103, 103);
+
+}
+
+/* =============== body =============== */
+
+body {
+  background-color: var(--F_Color) !important;
+  color: var(--S_Color) !important;
+}
+
+/* =============== SCROLL BAR =============== */
+::-webkit-scrollbar {
+  width: .60rem;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: hsl(206, 4%, 16%);
+  border-radius: 5px
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background-color: var(--S_Color) !important;
+}
+
+/* =============== Header  =============== */
+
+
+.Nav_Background {
+  background-color: var(--F_Color);
+  border-bottom-left-radius: 40px ;
+  border-bottom-right-radius: 40px ;
+}
+
+
+.Fixed_header {
+  position: sticky;
+  top: 0;
+  z-index: 50;
+  box-shadow: 0px 10px 15px -3px rgba(138, 138, 138, 0.1);
+ 
+}
+
+/* ============== Nav Bar ============== */
+.btn_bar,
+.btn_close {
+  background-color: transparent;
+  border: none !important;
+  outline: none !important;
+  color: #fff;
+  font-size: 30px;
+  cursor: pointer;
+  display: none;
+}
+
+.btn_close {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+}
+
+
+
+.list_navbar_color li a {
+  color: var(--S_Color);
+  font-size: 20px;
+  font-family: var(--th_Font);
+}
+
+.list_navbar_color li a:hover {
+  color: #fff;
+}
+
+
+/* =============== Section_1 [Home] =============== */
+
+
+.Sec_1,
+.Sec_2,
+.Sec_3 {
+
+  padding: 50px 0;
+}
+
+
+.home_title {
+  font-size: 4em;
+  background-image: linear-gradient(102deg, #ffffffc7, #020202);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: var(--th_Font);
+
+}
+
+.home_description {
+  font-size: 20px;
+  line-height: 2em;
+  letter-spacing: 1px;
+  font-family: var(--F_Font);
+
+}
+
+.btn_Bag button {
+  font-size: 20px !important;
+  padding: 10px 20px;
+  border-radius: 15px !important;
+  border: none;
+  font-family: var(--F_Font);
+
+
+}
+
+.btn_Bag button:hover {
+  background-color: var(--TH_Color) !important;
+  color: #000000;
+
+}
+
+.group_fea {
+  color: var(--TH_Color);
+  font-family: var(--F_Font);
+
+}
+
+
+.Sponsor {
+  margin-top: 150px !important;
+}
+
+.sponsor_img {
+  /* width: 99px; */
+  font-size: 5rem;
+  color: var(--S_Color);
+}
+
+.sponsor_img:hover {
+  /* width: 99px; */
+  color: var(--TH_Color);
+}
+
+/*============================ Section_2 [Spaces] ============================*/
+.Spaces {
+  color: #212529ae !important;
+  position: relative;
+}
+
+.Section_title {
+  font-size: 4.5em;
+  background-image: linear-gradient(102deg, #001C30, #176B87, #001C30);
+  color: #FFF;
+  margin: 50px 0 120px 0 !important;
+  padding: 5px 0 10px;
+  font-family: var(--S_Font);
+  box-shadow: 0px 10px 15px 1px rgba(104, 103, 103, 0.438);
+
+
+}
+
+/* ============== texts ============== */
+
+.inside {
+  margin-bottom: 50px;
+
+}
+
+.head_title_Sec_2 {
+  margin-bottom: 15px;
+  font-size: 30px;
+  color: var(--TH_Color);
+  font-family: var(--th_Font);
+}
+
+.para_Sec_2 {
+  font-size: 25px;
+  color: #dafffbce;
+  letter-spacing: 1px;
+  margin-left: 40px !important;
+  font-family: var(--S_Font);
+
+}
+
+
+
+
+
+
+/* ============== images ============== */
+
+.image-border {
+  border-radius: 50%;
+  border: 2px dashed var(--S_Color);
+  background-image: linear-gradient(102deg, #001C30, #176B87) !important;
+  width: 70%;
+  box-shadow: 10px 10px 15px 1px rgb(104, 103, 103);
+
+}
+
+.choise_imag {
+  border: none;
+  background-color: transparent;
+
+}
+
+.image-border:hover {
+  background-image: linear-gradient(102deg, #13556b, #1e6d77) !important;
+
+  border: 2px dashed gray;
+
+}
+
+
+
+/*  ============== Section_3 [Case] ==============  */
+.Case_3 {
+  overflow: hidden;
+}
+
+.btn_info button {
+  font-size: 20px !important;
+  padding: 5px 20px;
+  border-radius: 15px !important;
+  border: none;
+  font-family: var(--F_Font);
+
+}
+
+.btn_info button:hover {
+  background-color: var(--TH_Color);
+  color: #000000;
+
+}
+
+.para_Bag_detailes {
+
+  color: var(--S_Color);
+  font-size: 30px;
+  font-family: var(--F_Font);
+}
+
+
+
+/* ============== group_Two_Sec_3 ============== */
+
+.margin_Two_Sec_3 {
+  margin-top: 100px;
+}
+
+.pa_1_small_dron {
+  font-size: 2rem;
+  font-family: var(--F_Font);
+
+}
+
+.pa_2_small_dron {
+  font-size: 20px;
+  font-family: var(--Four_Font);
+
+}
+
+.btn_shop button {
+  font-size: 20px !important;
+  padding: 8px 25px;
+  border-radius: 15px !important;
+  border: none;
+  font-family: var(--F_Font);
+
+}
+
+.btn_shop button:hover {
+  background-color: var(--TH_Color);
+  color: #000;
+
+}
+
+.Container_position_Sec_3 {
+  position: relative;
+  border-radius: 20px;
+  background-color: var(--Four_Color);
+  color: #fff;
+}
+
+
+.small_dron_img {
+  position: absolute;
+  top: -63px;
+  right: -81px;
+}
+
+
+
+/* ============================ FOOTER ============================ */
+
+.foot {
+  padding: 50px 0 0;
+  color: var(--S_Color);
+
+}
+
+
+.foot li {
+  line-height: 35px;
+}
+
+.foot li a {
+  color: var(--S_Color);
+  font-family: var(--th_Font);
+}
+
+.foot ul h3 {
+  font-family: var(--S_Font);
+}
+
+.foot li a:hover {
+  color: #fff;
+}
+
+
+.footer__input {
+  border: none;
+  outline: none;
+  padding: 10px 20px;
+  background-color: transparent;
+  border-top: 1px solid var(--TH_Color);
+  border-bottom: 1px solid var(--TH_Color);
+  border-left: 1px solid var(--TH_Color);
+  color: var(--S_Color);
+
+
+
+}
+
+.footer__input::placeholder {
+  color: #64CCC5 !important;
+  font-family: var(--F_Font);
+  letter-spacing: 1.5px;
+
+
+}
+
+.Subscribe_btn {
+  border: none;
+  outline: none;
+  padding: 10px;
+  font-size: 20px;
+  background-color: var(--Four_Color);
+  color: var(--S_Color);
+  font-family: var(--S_Font);
+
+
+}
+
+.Subscribe_btn:hover {
+  color: #000;
+  background-color: #99d1ce;
+
+
+}
+
+.Subscribe_btn:active {
+  border: none;
+  outline: none;
+
+}
+
+.footer__social-link {
+  display: inline-flex;
+  color: var(--S_Color);
+  background-color: var(--Four_Color);
+  padding: 10px 15px;
+  border-radius: 10px;
+  font-size: 1rem;
+}
+
+.footer__social-link:hover {
+  color: #000;
+  background-color: var(--TH_Color);
+
+
+}
+
+.last {
+  font-family: var(--F_Font);
+
+}
